@@ -1,0 +1,43 @@
+%green-gradient {
+  @include vertical-gradient(#5BB602, #007500, #007500);
+}
+
+%radial-green-gradient {
+  @include radial-gradient(#5BB602, #007500, center bottom, 60%);
+}
+
+
+.bg-1 {
+  background: #eee;
+}
+
+.bg-2 {
+  background: $green-lightest;
+}
+
+.bg-3 {
+  background: $green;
+}
+
+
+// purple
+.bg-4 {
+  background: $purple-light;
+}
+
+
+.overlay {
+  -webkit-transition: opacity 100ms cubic-bezier(0.42,0,.58,1);
+  -moz-transition: opacity 100ms cubic-bezier(0.42,0,.58,1);
+  -ms-transition: opacity 100ms cubic-bezier(0.42,0,.58,1);
+  transition: opacity 100ms cubic-bezier(0.42,0,.58,1);
+  background: #fff no-repeat center 200px;
+  background-color: rgba(255,255,255,.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  opacity: 1;
+}
